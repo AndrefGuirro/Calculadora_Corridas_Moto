@@ -1,0 +1,12 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  font-family: 'Coiny', sans-serif;
+}
+
+
+input::placeholder {
+  color: #aaa;
+}
