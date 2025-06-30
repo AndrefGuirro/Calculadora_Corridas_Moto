@@ -1,6 +1,6 @@
 {
-  "name": "Calculadora de Lucro - Uber Moto",
-  "short_name": "Lucro Uber Moto",
+  "name": "Calcular Corridas Moto",
+  "short_name": "Lucro Corridas Moto",
   "start_url": "index.html",
   "display": "standalone",
   "background_color": "#ffffff",
