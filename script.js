@@ -61,4 +61,22 @@ function calcularLucro() {
       </div>
     </div>
   `;
+
+    document.getElementById('copiarPix').addEventListener('click', function() {
+        const chavePix = '685606c9-fba9-43f8-9c2d-d62eb031bb88';
+        navigator.clipboard.writeText(chavePix)
+            .then(() => {
+                // Altera o texto do botão temporariamente
+                const botao = document.getElementById('copiarPix');
+                botao.innerHTML = '<i class="fas fa-check"></i> Chave copiada!';
+                setTimeout(() => {
+                    botao.innerHTML = '<i class="fas fa-copy"></i> Copiar Chave PIX do Desenvolvedor';
+                }, 2000); // Volta ao texto original após 2 segundos
+            })
+            .catch(err => {
+                console.error('Erro ao copiar:', err);
+                alert('Não foi possível copiar. Tente manualmente: ' + chavePix);
+            });
+    });
+
 }
